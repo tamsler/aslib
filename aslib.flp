@@ -1,50 +1,1 @@
-﻿<flash_project name="aslib" version="1">
-    <project_folder name="org" expanded="true">
-        <project_folder name="springsoft" expanded="true">
-            <project_folder name="aslib" expanded="true">
-                <project_file path="./org/springsoft/aslib/TreeNode.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/BinaryTree.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/BinaryTreeObject.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/Debug.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/HashTable.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/HashTableObject.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/ListNode.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/ObjectListNode.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/ObjectTreeNode.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/Queue.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/QueueObject.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/SingleLinkedList.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/SingleLinkedListObject.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/Stack.as" filetype="as" />
-                <project_file path="./org/springsoft/aslib/StackObject.as" filetype="as" />
-            </project_folder>
-        </project_folder>
-    </project_folder>
-    <project_folder name="examples" expanded="true">
-        <project_folder name="BinaryTree" expanded="true">
-            <project_file path="./examples/BinaryTree/User.as" filetype="as" />
-            <project_file path="./examples/BinaryTree/BinaryTreeDriver.as" filetype="as" />
-            <project_file path="./examples/BinaryTree/BinaryTreeDriver.fla" filetype="fla" profile="" />
-        </project_folder>
-        <project_folder name="HashTable" expanded="true">
-            <project_file path="./examples/HashTable/User.as" filetype="as" />
-            <project_file path="./examples/HashTable/HashTableDriver.as" filetype="as" />
-            <project_file path="./examples/HashTable/HashTableDriver.fla" filetype="fla" profile="" def_file="true" />
-        </project_folder>
-        <project_folder name="Queue" expanded="true">
-            <project_file path="./examples/Queue/User.as" filetype="as" />
-            <project_file path="./examples/Queue/QueueDriver.as" filetype="as" />
-            <project_file path="./examples/Queue/QueueDriver.fla" filetype="fla" profile="" />
-        </project_folder>
-        <project_folder name="Stack" expanded="true">
-            <project_file path="./examples/Stack/User.as" filetype="as" />
-            <project_file path="./examples/Stack/StackDriver.as" filetype="as" />
-            <project_file path="./examples/Stack/StackDriver.fla" filetype="fla" profile="" />
-        </project_folder>
-        <project_folder name="SingleLinkedList" expanded="true">
-            <project_file path="./examples/SingleLinkedList/SingleLinkedListDriver.as" filetype="as" />
-            <project_file path="./examples/SingleLinkedList/SingleLinkedListDriver.fla" filetype="fla" profile="" />
-            <project_file path="./examples/SingleLinkedList/User.as" filetype="as" />
-        </project_folder>
-    </project_folder>
-</flash_project>
+﻿<flash_project name="aslib" version="1">    <project_folder name="org" expanded="true">        <project_folder name="springsoft" expanded="true">            <project_folder name="aslib" expanded="true">                <project_file path="./org/springsoft/aslib/TreeNode.as" filetype="as" />                <project_file path="./org/springsoft/aslib/BinaryTree.as" filetype="as" />                <project_file path="./org/springsoft/aslib/BinaryTreeObject.as" filetype="as" />                <project_file path="./org/springsoft/aslib/Debug.as" filetype="as" />                <project_file path="./org/springsoft/aslib/HashTable.as" filetype="as" />                <project_file path="./org/springsoft/aslib/HashTableObject.as" filetype="as" />                <project_file path="./org/springsoft/aslib/ListNode.as" filetype="as" />                <project_file path="./org/springsoft/aslib/ObjectListNode.as" filetype="as" />                <project_file path="./org/springsoft/aslib/ObjectTreeNode.as" filetype="as" />                <project_file path="./org/springsoft/aslib/Queue.as" filetype="as" />                <project_file path="./org/springsoft/aslib/QueueObject.as" filetype="as" />                <project_file path="./org/springsoft/aslib/SingleLinkedList.as" filetype="as" />                <project_file path="./org/springsoft/aslib/SingleLinkedListObject.as" filetype="as" />                <project_file path="./org/springsoft/aslib/Stack.as" filetype="as" />                <project_file path="./org/springsoft/aslib/StackObject.as" filetype="as" />            </project_folder>        </project_folder>    </project_folder>    <project_folder name="examples" expanded="true">        <project_folder name="BinaryTree" expanded="true">            <project_file path="./examples/BinaryTree/User.as" filetype="as" />            <project_file path="./examples/BinaryTree/BinaryTreeDriver.as" filetype="as" />            <project_file path="./examples/BinaryTree/BinaryTreeDriver.fla" filetype="fla" profile="" />        </project_folder>        <project_folder name="HashTable" expanded="true">            <project_file path="./examples/HashTable/User.as" filetype="as" />            <project_file path="./examples/HashTable/HashTableDriver.as" filetype="as" />            <project_file path="./examples/HashTable/HashTableDriver.fla" filetype="fla" profile="" />        </project_folder>        <project_folder name="Queue" expanded="true">            <project_file path="./examples/Queue/User.as" filetype="as" />            <project_file path="./examples/Queue/QueueDriver.as" filetype="as" />            <project_file path="./examples/Queue/QueueDriver.fla" filetype="fla" profile="" />        </project_folder>        <project_folder name="Stack" expanded="true">            <project_file path="./examples/Stack/User.as" filetype="as" />            <project_file path="./examples/Stack/StackDriver.as" filetype="as" />            <project_file path="./examples/Stack/StackDriver.fla" filetype="fla" profile="" />        </project_folder>        <project_folder name="SingleLinkedList" expanded="true">            <project_file path="./examples/SingleLinkedList/SingleLinkedListDriver.as" filetype="as" />            <project_file path="./examples/SingleLinkedList/SingleLinkedListDriver.fla" filetype="fla" profile="" def_file="true" />            <project_file path="./examples/SingleLinkedList/User.as" filetype="as" />        </project_folder>    </project_folder></flash_project>
