@@ -1,6 +1,4 @@
-﻿// $Id: TreeNode.as,v 1.8 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 TreeNode is part of ASLib
 

@@ -1,6 +1,4 @@
-﻿// $Id: StackDriver.as,v 1.8 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 StackDriver is part of ASLib
 
@@ -36,10 +34,6 @@ tamsler@cal.berkeley.edu
 */
 
 import org.springsoft.aslib.Stack;
-import org.springsoft.aslib.Debug;
-
-// Debug on/off
-Debug.turnOff();
 
 // Create a stack object
 var stack = new Stack();

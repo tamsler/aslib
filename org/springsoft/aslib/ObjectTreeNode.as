@@ -1,6 +1,4 @@
-﻿// $Id: ObjectTreeNode.as,v 1.8 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 ObjectTreeNode is part of ASLib
 
@@ -37,23 +35,17 @@ tamsler@cal.berkeley.edu
 
 import org.springsoft.aslib.TreeNode;
 import org.springsoft.aslib.BinaryTreeObject;
-import org.springsoft.aslib.Debug;
 
 class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 {
-	/**
-	* Reference to left node
-	*/
+
+	// Reference to left node
 	private var left_:ObjectTreeNode;
-	
-	/**
-	* Reference to right node
-	*/
+
+	// Reference to right node
 	private var right_:ObjectTreeNode;
 	
-	/**
-	* Node data member
-	*/
+	// Node data member
 	private var data_:BinaryTreeObject;
 	
 	/**
@@ -63,8 +55,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	function ObjectTreeNode(data:BinaryTreeObject)
 	{
-		Debug.trace("ObjectTreeNode Constructor");
-		
 		left_ = null;
 		right_ = null;
 		data_ = data;
@@ -77,8 +67,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function setLeft(node:TreeNode):Void
 	{
-		Debug.trace("ObjectTreeNode.setLeft()");
-		
 		left_ = ObjectTreeNode(node);
 	}
 	
@@ -89,8 +77,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function setRight(node:TreeNode):Void
 	{
-		Debug.trace("ObjectTreeNode.setRight()");
-		
 		right_ = ObjectTreeNode(node);
 	}
 	
@@ -101,8 +87,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function set(data:BinaryTreeObject):Void
 	{
-		Debug.trace("ObjectTreeNode.set()");
-		
 		data_ = data;
 	}
 
@@ -113,8 +97,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function getLeft(Void):TreeNode
 	{
-		Debug.trace("ObjectTreeNode.getLeft()");
-		
 		return left_;
 	}
 	
@@ -125,8 +107,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function getRight(Void):TreeNode
 	{
-		Debug.trace("ObjectTreeNode.getRight()");
-		
 		return right_;
 	}
 	
@@ -137,8 +117,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function get(Void):BinaryTreeObject
 	{
-		Debug.trace("ObjectTreeNode.get()");
-		
 		return data_;
 	}
 	
@@ -149,8 +127,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function toString(Void):String
 	{
-		Debug.trace("ObjectTreeNode.toString()");
-		
 		return data_.toString();
 	}
 	
@@ -161,8 +137,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function getKey(Void):Number
 	{
-		Debug.trace("ObjectTreeNode.getKey()");
-		
 		return data_.getKey();
 	}
 	
@@ -173,8 +147,6 @@ class org.springsoft.aslib.ObjectTreeNode implements TreeNode
 	*/
 	public function isLeave(Void):Boolean
 	{
-		Debug.trace("ObjectTreeNode.isLeave()");
-		
 		if(null == left_ && null == right_) {
 			return true;
 		}

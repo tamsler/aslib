@@ -1,6 +1,4 @@
-﻿// $Id: Queue.as,v 1.11 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 Queue is part of ASLib
 
@@ -37,13 +35,10 @@ tamsler@cal.berkeley.edu
 
 import org.springsoft.aslib.SingleLinkedList;
 import org.springsoft.aslib.QueueObject;
-import org.springsoft.aslib.Debug;
 
 class org.springsoft.aslib.Queue
 {
-	/**
-	* The SingleLinkedList queue representation
-	*/
+	// The SingleLinkedList queue representation
 	private var list_:SingleLinkedList;
 
 	/**
@@ -51,8 +46,6 @@ class org.springsoft.aslib.Queue
 	*/
 	function Queue() 
 	{
-		Debug.trace("Queue constructor");
-		
 		list_ = new SingleLinkedList();
 	}
 
@@ -63,8 +56,6 @@ class org.springsoft.aslib.Queue
 	*/
 	public function enqueue(item:QueueObject):Void
 	{
-		Debug.trace("Queue.enqueue()");
-		
 		list_.insertTail(item);
 	}
 
@@ -75,8 +66,6 @@ class org.springsoft.aslib.Queue
 	*/
 	public function dequeue(Void):QueueObject
 	{
-		Debug.trace("Queue.dequeue()");
-		
 		// Get the ObjectListNode and then the data with get()
 		return QueueObject(list_.getFront(true).get());
 	}
@@ -88,8 +77,6 @@ class org.springsoft.aslib.Queue
 	*/
 	public function isEmpty(Void):Boolean
 	{
-		Debug.trace("Queue.isEmpty()");
-		
 		return list_.isEmpty();
 	}
 
@@ -98,8 +85,6 @@ class org.springsoft.aslib.Queue
 	*/
 	public function print(Void):Void
 	{
-		Debug.trace("Queue.print()");
-		
 		list_.print();
 	}
 }

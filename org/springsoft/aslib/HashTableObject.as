@@ -1,6 +1,4 @@
-﻿// $Id: HashTableObject.as,v 1.11 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 HashTableObject is part of ASLib
 

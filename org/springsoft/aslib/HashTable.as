@@ -1,6 +1,4 @@
-﻿// $Id: HashTable.as,v 1.11 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 HashTable is part of ASLib
 
@@ -37,24 +35,17 @@ tamsler@cal.berkeley.edu
 
 import org.springsoft.aslib.SingleLinkedList;
 import org.springsoft.aslib.HashTableObject;
-import org.springsoft.aslib.Debug;
 
 class org.springsoft.aslib.HashTable
 {
-	/**
-	* HashTable array default size
-	*/
+	// HashTable array default size
 	private var size_:Number = 50;
 	
-	/**
-	* Array of SingleLinkedLists
-	*/
+	// Array of SingleLinkedLists
 	private var hashTable_:Array;
 
-	/**
-	* Keep tarck of HashTable's size
-	*/
-	private var numItems_ = 0;
+	// Keep tarck of HashTable's size
+	private var numItems_:Number = 0;
 
 	/**
 	* HashTable Constructor
@@ -63,8 +54,6 @@ class org.springsoft.aslib.HashTable
 	*/
 	function HashTable(size:Number)
 	{
-		Debug.trace("HashTable Constructor");
-		
 		size_ = size;
 
 		// Create the array of single linked lists
@@ -83,9 +72,7 @@ class org.springsoft.aslib.HashTable
 	*/
 	public function put(key:Number, data:HashTableObject):Void
 	{
-		Debug.trace("HashTable.put()");
-		
-		var index = key % size_;
+		var index:Number = key % size_;
 		hashTable_[index].insert(data);
 		numItems_++;
 	}
@@ -98,9 +85,7 @@ class org.springsoft.aslib.HashTable
 	*/
 	public function get(key:Number):HashTableObject
 	{
-		Debug.trace("HashTable.get()");
-		
-		var index = key % size_;
+		var index:Number = key % size_;
 		// Access SLL and get the node via the SLL's get method.
 		// Then we call get on the node to extract the data object.
 		return HashTableObject(hashTable_[index].get(key).get());
@@ -113,9 +98,7 @@ class org.springsoft.aslib.HashTable
 	*/
 	public function remove(key:Number):Void
 	{
-		Debug.trace("HashTable.remove()");
-		
-		var index = key % size_;
+		var index:Number = key % size_;
 		hashTable_[index].remove(key);
 		numItems_--;
 	}
@@ -125,8 +108,6 @@ class org.springsoft.aslib.HashTable
 	*/
 	public function removeAll(Void):Void
 	{
-		Debug.trace("HashTable.removeAll()");
-		
 		for(var i = 0; i < size_; i++) {
 			hashTable_[i].removeAll();
 		}
@@ -140,8 +121,6 @@ class org.springsoft.aslib.HashTable
 	*/
 	public function size(Void):Number
 	{
-		Debug.trace("HashTable.size()");
-		
 		return numItems_;
 	}
 
@@ -152,8 +131,6 @@ class org.springsoft.aslib.HashTable
 	*/
 	public function isEmpty(Void):Boolean
 	{
-		Debug.trace("HashTable.isEmpty()");
-		
 		return (0 < numItems_) ? false : true;
 	}
 
@@ -162,8 +139,6 @@ class org.springsoft.aslib.HashTable
 	*/
 	public function print(Void):Void
 	{
-		Debug.trace("HashTable.print()");
-		
 		if(isEmpty()) {
 			trace("HastTable is empty!");
 		}

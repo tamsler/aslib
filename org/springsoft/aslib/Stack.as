@@ -1,6 +1,4 @@
-﻿// $Id: Stack.as,v 1.11 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 Stack is part of ASLib
 
@@ -37,13 +35,10 @@ tamsler@cal.berkeley.edu
 
 import org.springsoft.aslib.SingleLinkedList;
 import org.springsoft.aslib.StackObject;
-import org.springsoft.aslib.Debug;
 
 class org.springsoft.aslib.Stack
 {
-	/**
-	* The SingleLinkedList stack representation
-	*/
+	// The SingleLinkedList stack representation
 	private var list_:SingleLinkedList;
 
 	/**
@@ -51,8 +46,6 @@ class org.springsoft.aslib.Stack
 	*/
 	function Stack() 
 	{
-		Debug.trace("Stack constructor");
-		
 		list_ = new SingleLinkedList();
 	}
 
@@ -63,8 +56,6 @@ class org.springsoft.aslib.Stack
 	*/
 	public function push(item:StackObject):Void
 	{
-		Debug.trace("Stack.push()");
-		
 		list_.insert(item);
 	}
 
@@ -75,8 +66,6 @@ class org.springsoft.aslib.Stack
 	*/
 	public function pop(Void):StackObject
 	{
-		Debug.trace("Stack.pop()");
-		
 		// Get the ObjectListNode and then the data with get().
 		// Also making sure to delete the object from the stack by passing true to getFront
 		return StackObject(list_.getFront(true).get());
@@ -89,8 +78,6 @@ class org.springsoft.aslib.Stack
 	*/
 	public function peek(Void):StackObject
 	{
-		Debug.trace("Stack.peek()");
-		
 		// Get the ObjectListNode and then the data with get()
 		// Also making sure to not delete the object from the stack by passing false to getFront
 		return StackObject(list_.getFront(false).get());
@@ -101,9 +88,6 @@ class org.springsoft.aslib.Stack
 	*/
 	public function print(Void):Void
 	{
-		Debug.trace("Stack.print()");
-		
 		list_.print();
-
 	}
 }

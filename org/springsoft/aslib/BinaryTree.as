@@ -1,6 +1,4 @@
-﻿// $Id: BinaryTree.as,v 1.12 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 BinaryTree is part of ASLib
 
@@ -38,14 +36,11 @@ tamsler@cal.berkeley.edu
 import org.springsoft.aslib.BinaryTreeObject;
 import org.springsoft.aslib.TreeNode;
 import org.springsoft.aslib.ObjectTreeNode;
-import org.springsoft.aslib.Debug;
 
 // BinaryTree Class
 class org.springsoft.aslib.BinaryTree
 {
-	/**
-	* Tree root
-	*/
+	// Tree root
 	private var treeRoot_:TreeNode;
 	
 	/** 
@@ -53,8 +48,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	function BinaryTree()
 	{
-		Debug.trace("BinaryTree constructor");
-		
 		treeRoot_ = null;
 	}
 	
@@ -65,8 +58,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	public function insertIter(data:BinaryTreeObject):Void
 	{
-		Debug.trace("BinaryTree.insertIter()");
-		
 		var runner:TreeNode = treeRoot_;
 		var node:ObjectTreeNode = new ObjectTreeNode(data);
 		
@@ -107,8 +98,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	public function insert(data:BinaryTreeObject):Void
 	{
-		Debug.trace("BinaryTree.insert()");
-		
 		if(isEmpty()) {
 			treeRoot_ = new ObjectTreeNode(data);
 			return;
@@ -124,8 +113,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	public function search(key:Number):BinaryTreeObject
 	{
-		Debug.trace("BinaryTree.search()");
-		
 		if(isEmpty()) {
 			return null;
 		}
@@ -140,8 +127,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	public function printPreOrder(Void):Void
 	{
-		Debug.trace("BinaryTree.printPreOrder()");
-		
 		printPreOrderHelper(treeRoot_);
 	}
 	
@@ -152,8 +137,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	public function printPostOrder(Void):Void
 	{
-		Debug.trace("BinaryTree.printPostOrder()");
-		
 		printPostOrderHelper(treeRoot_);
 	}
 	
@@ -164,8 +147,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	public function printInOrder(Void):Void
 	{
-		Debug.trace("BinaryTree.printInOrder()");
-		
 		printInOrderHelper(treeRoot_);
 	}
 	
@@ -176,8 +157,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	public function remove(key:Number):Void
 	{
-		Debug.trace("BinaryTree.remove()");
-		
 		var tmpNode:TreeNode = null;
 		
 		// Test if we remove root node
@@ -220,8 +199,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	private function isEmpty(Void):Boolean
 	{
-		Debug.trace("BinaryTree.isEmpty()");
-		
 		return (null == treeRoot_) ? true : false;
 	}
 	
@@ -232,8 +209,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	private function printPreOrderHelper(tree:TreeNode):Void
 	{
-		Debug.trace("BinaryTree.printPreOrderHelper()");
-		
 		if(null != tree) {
 			trace(tree.toString());
 			printPreOrderHelper(tree.getLeft());
@@ -248,8 +223,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	private function printInOrderHelper(tree:TreeNode):Void
 	{
-		Debug.trace("BinaryTree.printInOrderHelper()");
-		
 		if(null != tree) {
 			printInOrderHelper(tree.getLeft());
 			trace(tree.toString());
@@ -265,8 +238,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	private function insertHelper(node:TreeNode, tree:TreeNode):Void
 	{
-		Debug.trace("BinaryTree.insertHelper()");
-		
 		if(node.getKey() < tree.getKey()) {
 			if(tree.getLeft() == null) {
 				tree.setLeft(node);
@@ -294,8 +265,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	private function searchHelper(tree:TreeNode, key:Number):BinaryTreeObject
 	{
-		Debug.trace("BinaryTree.searchHelper()");
-		
 		if(key == tree.getKey()) {
 			return tree.get();
 		}
@@ -314,8 +283,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	private function printPostOrderHelper(tree:TreeNode):Void
 	{
-		Debug.trace("BinaryTree.printPostOrderHelper()");
-		
 		if(null != tree) {
 			printPostOrderHelper(tree.getLeft());
 			printPostOrderHelper(tree.getRight());
@@ -331,8 +298,6 @@ class org.springsoft.aslib.BinaryTree
 	*/
 	private function removeHelper(key:Number, tree:TreeNode):TreeNode
 	{
-		Debug.trace("BinaryTree.removeHelper()");
-		
 		var tmpNode:TreeNode = null;
 		var findNode:TreeNode = null;
 		

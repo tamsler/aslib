@@ -1,6 +1,4 @@
-﻿// $Id: QueueDriver.as,v 1.7 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 QueueDriver is part of ASLib
 
@@ -36,10 +34,6 @@ tamsler@cal.berkeley.edu
 */
 
 import org.springsoft.aslib.Queue;
-import org.springsoft.aslib.Debug;
-
-// Debug on/off
-Debug.turnOff();
 
 // Create queue instance
 var queue = new Queue();

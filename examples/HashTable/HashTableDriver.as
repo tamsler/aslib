@@ -1,6 +1,4 @@
-﻿// $Id: HashTableDriver.as,v 1.7 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 HashTableDriver is part of ASLib
 
@@ -36,10 +34,6 @@ tamsler@cal.berkeley.edu
 */
 
 import org.springsoft.aslib.HashTable;
-import org.springsoft.aslib.Debug;
-
-// Debug on/off
-Debug.turnOff();
 
 // Create HashTable of size 20
 var hashTable = new HashTable(20);

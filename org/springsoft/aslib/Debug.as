@@ -1,6 +1,4 @@
-﻿// $Id: Debug.as,v 1.8 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 Debug is part of ASLib
 
@@ -37,9 +35,7 @@ tamsler@cal.berkeley.edu
 
 class org.springsoft.aslib.Debug
 {
-	/**
-	* Static member to indicate if debugging features are turned on or off
-	*/
+	// Static member to indicate if debugging features are turned on or off
 	private static var isActive_:Boolean = false;
 
 	/** 

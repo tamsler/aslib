@@ -1,6 +1,4 @@
-﻿// $Id: SingleLinkedListObject.as,v 1.6 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 SingleLinkedListObject is part of ASLib
 

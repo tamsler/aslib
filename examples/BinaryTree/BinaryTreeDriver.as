@@ -1,6 +1,4 @@
-﻿// $Id: BinaryTreeDriver.as,v 1.8 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 BinaryTreeDriver is part of ASLib
 
@@ -36,10 +34,6 @@ tamsler@cal.berkeley.edu
 */
 
 import org.springsoft.aslib.BinaryTree;
-import org.springsoft.aslib.Debug;
-
-// Debug on/off
-Debug.turnOff();
 
 // Create a binary tree object
 var binaryTree = new BinaryTree();

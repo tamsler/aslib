@@ -1,6 +1,4 @@
-﻿// $Id: BinaryTreeObject.as,v 1.5 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 BinaryTreeObject is part of ASLib
 

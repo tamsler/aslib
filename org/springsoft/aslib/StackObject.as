@@ -1,6 +1,4 @@
-﻿// $Id: StackObject.as,v 1.2 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 StackObject is part of ASLib
 

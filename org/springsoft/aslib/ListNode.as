@@ -1,6 +1,4 @@
-﻿// $Id: ListNode.as,v 1.7 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 ListNode is part of ASLib
 

@@ -1,6 +1,4 @@
-﻿// $Id: User.as,v 1.7 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 User is part of ASLib
 
@@ -36,46 +34,44 @@ tamsler@cal.berkeley.edu
 */
 
 import org.springsoft.aslib.HashTableObject;
-import org.springsoft.aslib.Debug;
 
 // User class 
 class User implements HashTableObject
 {
 
-	private var _key:Number;
-	private var _firstName:String;
-	private var _lastName:String;
+	private var key_:Number;
+	private var firstName_:String;
+	private var lastName_:String;
 
 	// Constructor
 	function User(key:Number, firstName:String, lastName:String)
 	{
-		Debug.trace("HashTableObject User Constructor");
-		_key = key;
-		_firstName = firstName;
-		_lastName = lastName;
+		key_ = key;
+		firstName_ = firstName;
+		lastName_ = lastName;
 	}
 
 	// Implement getKey method
 	public function getKey(Void):Number
 	{
-		return _key;
+		return key_;
 	}
 	
 	// Implement  toString method
 	public function toString(Void):String
 	{
-		return "Key = " + _key + " : FirstName = " + _firstName + " : LastName = " + _lastName;
+		return "Key = " + key_ + " : FirstName = " + firstName_ + " : LastName = " + lastName_;
 	}
 	
 	// Return FirstName
 	public function getFirstName(Void):String
 	{
-		return _firstName;
+		return firstName_;
 	}
 
 	// Return LastName
 	public function getLastName(Void):String
 	{
-		return _lastName;
+		return lastName_;
 	}
 }

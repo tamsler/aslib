@@ -1,4 +1,10 @@
-# $Id: ChangeLog,v 1.10 2004/10/08 01:00:30 thomas Exp $
+# $Id:$
+
+ASLib 1.1.0
+===========
+2005-01-22 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Enhanced the SingleLinkedList class
+
 
 ASLib 1.0.2
 ===========

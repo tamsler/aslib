@@ -1,6 +1,4 @@
-﻿// $Id: ObjectListNode.as,v 1.8 2004/10/08 00:52:59 thomas Exp $
-
-/*
+﻿/*
 
 ObjectListNode is part of ASLib
 
@@ -38,19 +36,13 @@ tamsler@cal.berkeley.edu
 
 import org.springsoft.aslib.ListNode;
 import org.springsoft.aslib.SingleLinkedListObject;
-import org.springsoft.aslib.Debug;
 
 class org.springsoft.aslib.ObjectListNode implements ListNode
 {
-
-	/**
-	* Reference to next node
-	*/
+	// Reference to next node
 	private var next_:ObjectListNode;
 
-	/**
-	* Node data member
-	*/
+	// Node data member
 	private var data_:SingleLinkedListObject;
 
 	/**
@@ -71,8 +63,6 @@ class org.springsoft.aslib.ObjectListNode implements ListNode
 	*/
 	public function get(Void):SingleLinkedListObject
 	{
-		Debug.trace("ObjectListNode.get()");
-		
 		return data_;
 	}
 
@@ -83,8 +73,6 @@ class org.springsoft.aslib.ObjectListNode implements ListNode
 	*/
 	public function getNext(Void):ListNode
 	{
-		Debug.trace("ObjectListNode.getNext()");
-		
 		return next_;
 	}
 
@@ -95,8 +83,6 @@ class org.springsoft.aslib.ObjectListNode implements ListNode
 	*/
 	public function setNext(node:ListNode):Void
 	{
-		Debug.trace("ObjectListNode.setNext()");
-		
 		next_ = ObjectListNode(node);
 	}
 
@@ -107,8 +93,6 @@ class org.springsoft.aslib.ObjectListNode implements ListNode
 	*/
 	public function set(data:SingleLinkedListObject):Void
 	{
-		Debug.trace("ObjectListNode.set()");
-		
 		data_ = data;
 	}
 
@@ -118,9 +102,7 @@ class org.springsoft.aslib.ObjectListNode implements ListNode
 	* @returns the list node's string representation
 	*/
 	public function toString(Void):String 
-	{
-		Debug.trace("ObjectListNode.toString()");
-		
+	{	
 		return data_.toString();
 	}
 
@@ -131,8 +113,6 @@ class org.springsoft.aslib.ObjectListNode implements ListNode
 	*/
 	public function getKey(Void):Number
 	{
-		Debug.trace("ObjectListNode.getKey()");
-		
 		return data_.getKey();
 	}
 }
