@@ -1,0 +1,25 @@
+# $Id: INSTALL,v 1.4 2004/03/06 06:00:26 thomas Exp $
+
+ASLib Installation Instructions
+-------------------------------
+
+Requirements:
+-A product that supports ActionScript 2.0 such as Macromedia Flash MX 2004
+
+Use the Flash MX 2004 Extension Manager to import the ASLib MXP package.
+When you use any of the ASLib data structures, make sure that you use
+the following import statement:
+
+import org.springsoft.aslib.*;
+
+If you have any questions, please contact the author:
+
+Thomas Amsler
+tamsler@cal.berkeley.edu
+http://www.springsoft.org
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+# $Id: ChangeLog,v 1.10 2004/10/08 01:00:30 thomas Exp $
+
+ASLib 1.0.2
+===========
+2004-10-07 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Bugfix: Changed method signature for BinaryTree print methods
+* Changed naming private vars from _x to x_
+* Code cleanup
+
+
+ASLib 1.0.1
+===========
+2004-04-08 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Adding Stack, Queue, and HashTable Object abstraction
+* Enhancing examples
+
+
+ASLib 1.0.0
+===========
+2004-03-26 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Reformat Comments for ASDoc Generator
+* Adding ASDoc
+* Adjust import statements
+* Minor bug fixes
+
+
+ASLib 0.2.0
+===========
+2004-03-09 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Adding BinaryTree structure
+* SingleLinkedList Node class name change and minor bugfix
+* Using SingleLinkedListObject interface
+* SingleLinkedList, Stack, and Queue use User object in example code
+
+
+ASLib 0.1.1
+===========
+2004-02-26 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Create example directories
+* Adding ASLib MXP
+
+
+ASLib 0.1.0
+===========
+2004-02-23 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Adding HashTable structure
+
+
+ASLib 0.0.1
+===========
+2004-02-16 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Initial release SingleLinkedList
+* Initial release Stack
+* Initial release Queue
+

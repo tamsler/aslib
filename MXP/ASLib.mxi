@@ -1,0 +1,86 @@
+<macromedia-extension
+	name="ASLib"
+	version="1.0.2"
+	requires-restart="false"
+	type="actionscript">
+
+	<author name="Thomas Amsler" />	
+
+	<products>
+		<product name="Flash" version="7" primary="true" />
+	</products>
+	<description>
+		<![CDATA[ASLib is an ActionScript 2.0 based library that 
+		   	 implements common data structures.]]>
+	</description>
+	<ui-access>
+		<![CDATA[This release contains the following data structures:
+		   	 - Single Linked List ( class SingleLinkedList)
+		   	 - Stack (class Stack)
+		   	 - Queue (class Queue)
+		   	 - HashTable (class HashTable)
+			 - Binary Tree (class BinaryTree)
+
+			 To use these classes, make sure that you use the following import statement:
+
+			 import org.springsoft.aslib.*;
+
+			 For more information about ASLib, please visit http://www.springsoft.org]]>
+	</ui-access>
+	<license-agreement>
+		<![CDATA[ASLib
+			
+			Copyright (C) 2004 Thomas P. Amsler
+			
+			This library is free software; you can redistribute it and/or
+			modify it under the terms of the GNU Lesser General Public
+			License as published by the Free Software Foundation; either
+			version 2.1 of the License, or (at your option) any later version.
+			
+			This library is distributed in the hope that it will be useful,
+			but WITHOUT ANY WARRANTY; without even the implied warranty of
+			MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+			Lesser General Public License for more details.
+			
+			You should have received a copy of the GNU Lesser General Public
+			License along with this library; if not, write to the Free Software
+			Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+			
+			Thomas Amsler
+			tamsler@cal.berkeley.edu]]>
+	</license-agreement>	
+	<files>
+		<file source="BinaryTree.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="BinaryTreeObject.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="Debug.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="HashTable.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="HashTableObject.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="ListNode.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="ObjectListNode.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="ObjectTreeNode.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="Queue.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="QueueObject.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="SingleLinkedList.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="SingleLinkedListObject.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="Stack.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="StackObject.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+		<file source="TreeNode.as"
+		 destination="$Flash/Classes/org/springsoft/aslib" />
+	</files>
+</macromedia-extension>
+
+	
