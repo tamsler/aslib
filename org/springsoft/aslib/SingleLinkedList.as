@@ -109,7 +109,7 @@ class org.springsoft.aslib.SingleLinkedList
 	public function get(key:Number):ListNode
 	{
 		Debug.trace("SingleLinkedList.get()");
-		
+
 		var tempNode:ListNode = head_;
 
 		// Loop through the list and if we have a math, stop and return.
@@ -121,6 +121,57 @@ class org.springsoft.aslib.SingleLinkedList
 		}
 		
 		return tempNode;
+	}
+	
+	/**
+	* Get a node at index
+	*
+	* @param index The numeric index to locate node
+	* @returns ListNode if we locate the index.  Otherwise returns null.
+	*/
+	public function getAt(index:Number):ListNode
+	{
+		Debug.trace("SingleLinkedList.getAt()");
+
+		var tempNode:ListNode = head_;
+		var position:Number = 0;
+		
+		// Loop through the list and if we reach the index, stop and return.
+		// If we have an invalid index, returning null since tempNode will point to null
+		for(; tempNode != null; tempNode = tempNode.getNext()) {
+			if(index == position) {
+				break;
+			}
+			position++;
+		}
+		
+		return tempNode;
+	}
+	
+	/**
+	* Get a node data object reference
+	*
+	* @param key The numeric key to find node
+	* @returns SingleLinkedListObject if we find the key.  Otherwise returns null.
+	*/
+	public function getData(key:Number):SingleLinkedListObject
+	{
+		Debug.trace("SingleLinkedList.getData()");
+
+		return this.get(key).get();
+	}
+	
+	/**
+	* Get a node data object reference
+	*
+	* @param index The numeric index to locate node
+	* @returns SingleLinkedListObject if we locate the index.  Otherwise returns null.
+	*/
+	public function getDataAt(index:Number):SingleLinkedListObject
+	{
+		Debug.trace("SingleLinkedList.getData()");
+
+		return this.getAt(index).get();
 	}
 
 	/**
@@ -150,7 +201,36 @@ class org.springsoft.aslib.SingleLinkedList
 	}
 	
 	/**
+	* Remove a node at index
 	*
+	* @param index The numeric index to locate and remove node
+	*/
+	/*
+	public function removeAt(index:Number):Void
+	{
+		Debug.trace("SingleLinkedList.remove()");
+
+		var previousTempNode:ListNode = head_;
+		var position:Number = 0;
+
+		for(var tempNode:ListNode = head_; tempNode != null; previousTempNode = tempNode, tempNode = tempNode.getNext()) {
+			if(index == position) {
+				if(isFront(tempNode)) {
+					removeFront();
+				}
+				else if(isEnd(tempNode)) {
+					removeEnd(previousTempNode);
+				}
+				else {
+					removeMiddle(previousTempNode);
+				}
+			}
+		}
+	}
+	*/
+	
+	
+	/**
 	* Remove all nodes
 	*/
 	public function removeAll():Void
@@ -211,6 +291,26 @@ class org.springsoft.aslib.SingleLinkedList
 	}
 	
 	/**
+	* Gets the size of the list
+	*
+	* @returns the number of nodes in the list
+	*/
+	public function size(Void):Number
+	{
+		Debug.trace("SingleLinkedList.size()");
+		
+		var tempNode:ListNode = head_;
+		var size:Number = 0;
+
+		// Loop through the list and count each node
+		for(; tempNode != null; tempNode = tempNode.getNext()) {
+			size++;
+		}
+		
+		return size;
+	}
+	
+	/**
 	* Test for front node
 	*
 	* @param node Test for front node
@@ -222,7 +322,7 @@ class org.springsoft.aslib.SingleLinkedList
 		
 		return (head_ == node) ? true : false; 
 	}
-
+	
 	/**
 	* Test for end node
 	* @param node Test for end node

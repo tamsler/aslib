@@ -57,6 +57,10 @@ singleLinkedList.insert(u2);
 singleLinkedList.insert(u3);
 singleLinkedList.insert(u4);
 
+// Get the size of the list
+var listSize = singleLinkedList.size();
+trace("SingleLinkedList size = " + listSize);
+
 // Print the list
 trace("\nPrinting List");
 singleLinkedList.print();
@@ -69,6 +73,19 @@ singleLinkedList.remove(u1.getKey());
 trace("\nPrinting List");
 singleLinkedList.print();
 
+// Getting a user object identified by a key
+// First option: Get the ListNode and then call get() on the ListNode
+// to get the data object (SingleLinkedList object)
+trace("Getting user object = " + singleLinkedList.get(u2.getKey()).get());
+// Second option: Get the data object (SingleLinkedList object) directly
+trace("Getting user object = " + singleLinkedList.getData(u2.getKey()));
+
+// Getting a user object identified by an index
+// First option: Get the ListNode and then call get() on the ListNode
+// to get the data object (SingleLinkedList object)
+trace("Getting user object = " + singleLinkedList.getAt(2).get());
+// Second option: Get the data object (SingleLinkedList object) directly
+trace("Getting user object = " + singleLinkedList.getDataAt(2));
 
 // Remove remaining nodes and print result
 trace("\nRemoving SingleLinkedListObject from List");
