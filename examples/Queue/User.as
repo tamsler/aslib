@@ -36,31 +36,24 @@ tamsler@cal.berkeley.edu
 import org.springsoft.aslib.QueueObject;
 
 // User class 
-class User implements QueueObject
+class User extends QueueObject
 {
 
-	private var key_:Number;
 	private var firstName_:String;
 	private var lastName_:String;
 
 	// Constructor
-	function User(key:Number, firstName:String, lastName:String)
+	function User(firstName:String, lastName:String)
 	{
-		key_ = key;
 		firstName_ = firstName;
 		lastName_ = lastName;
 	}
-
-	// Implement getKey method
-	public function getKey(Void):Number
-	{
-		return key_;
-	}
 	
-	// Implement  toString method
+	// Return String representation of object
+	// This method overwrites the StackObject's toString implementation
 	public function toString(Void):String
 	{
-		return "Key = " + key_ + " : FirstName = " + firstName_ + " : LastName = " + lastName_;
+		return "FirstName = " + firstName_ + " : LastName = " + lastName_;
 	}
 	
 	// Return FirstName

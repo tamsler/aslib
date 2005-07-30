@@ -29,13 +29,33 @@ tamsler@cal.berkeley.edu
 	ActionScript 2.0
 
 	Description:
-	StackObject Interface
+	StackObject Class
 =====================================================================
 */
 
 import org.springsoft.aslib.SingleLinkedListObject;
 
-interface org.springsoft.aslib.StackObject extends SingleLinkedListObject
+class org.springsoft.aslib.StackObject implements SingleLinkedListObject
 {
+	/**
+	* Implement toString method
+	* Implement this method in the extended class to overwrite it
+	*
+	* @returns the list node's string representation
+	*/
+	public function toString(Void):String 
+	{	
+		return "Object: StackObject";
+	}
+
+	/**
+	* Implement getKey method
+	*
+	* @returns the list node's key
+	*/
+	public function getKey(Void):Number
+	{
+		return null;
+	}
 }
 

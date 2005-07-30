@@ -40,10 +40,10 @@ var queue = new Queue();
 
 // Create some user objects
 trace("Creating some user objects ...");
-var u1 = new User(1, "FN " + 1, "LN " + 1);
-var u2 = new User(2, "FN " + 2, "LN " + 2);
-var u3 = new User(3, "FN " + 3, "LN " + 3);
-var u4 = new User(4, "FN " + 4, "LN " + 4);
+var u1 = new User("FN " + 1, "LN " + 1);
+var u2 = new User("FN " + 2, "LN " + 2);
+var u3 = new User("FN " + 3, "LN " + 3);
+var u4 = new User("FN " + 4, "LN " + 4);
 
 // Put users objects into queue
 trace("\nEnqueue some objects ...");
