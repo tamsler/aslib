@@ -1,4 +1,10 @@
-# $Id:$
+# ChangeLog
+
+ASLib 1.2.0
+===========
+2005-09-04 Thomas Amsler <tamsler@cal.berkeley.edu>
+* Simplified the Stack and Queue usage
+
 
 ASLib 1.1.0
 ===========

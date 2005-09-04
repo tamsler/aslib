@@ -1,90 +1,0 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd"><html><head>
-<title>ActionDoc - org.springsoft.aslib.HashTable</title>
-</head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="actiondoc.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<h4 class="menu"><a href="index.html">INDEX</a></h4>
-<h5 class="novertspace">org.springsoft.aslib</h5>
-<h1>HashTable</h1>
-<h3 class="novertspace">Property Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr ><td width="2">private </td><td width="2"></td><td width="2">Number</td><td><strong><code><a href="#size_">size_</a></code></strong> = 50</td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2">Array</td><td><strong><code><a href="#hashTable_">hashTable_</a></code></strong></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2">Number</td><td><strong><code><a href="#numItems_">numItems_</a></code></strong> = 0</td></tr>
-</table>
-<h3 class="novertspace">Constructor Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr><td><code><strong><a href="#HashTable">HashTable</a></strong>(size:Number)</code></td></tr>
-</table>
-<h3 class="novertspace">Method Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#put">put</a></strong>(key:Number, data:<a href="_org.springsoft.aslib.HashTableObject.html">HashTableObject</a>)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.HashTableObject.html">HashTableObject</a></td><td><code><strong><a href="#get">get</a></strong>(key:Number)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#remove">remove</a></strong>(key:Number)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#removeAll">removeAll</a></strong>(Void)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#size">size</a></strong>(Void)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#isEmpty">isEmpty</a></strong>(Void)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#print">print</a></strong>(Void)</code></td></tr>
-</table>
-<h3>Property Details</h3>
-<a name="size_"></a>
-<div class="divider"><h4>size_</h4>
-<p><code>private <strong>size_</strong>:Number = 50</code></p>
-<blockquote></blockquote></div><a name="hashTable_"></a>
-<div class="divider"><h4>hashTable_</h4>
-<p><code>private <strong>hashTable_</strong>:Array</code></p>
-<blockquote></blockquote></div><a name="numItems_"></a>
-<div><h4>numItems_</h4>
-<p><code>private <strong>numItems_</strong>:Number = 0</code></p>
-<blockquote></blockquote></div><h3>Constructor Details</h3>
-<a name="HashTable"></a>
-<div><h4>HashTable</h4>
-<pre><b>HashTable</b>(size:Number)</pre>
-<blockquote><p>HashTable Constructor </p>
-<dl><dt>Parameters</dt><dd><code><strong>size</strong> (Number) </code>- The HashTable array size	</dd>
-</dl></blockquote></div><h3>Method Details</h3>
-<a name="put"></a>
-<div class="divider"><h4>put</h4>
-<pre>public <b>put</b>(key:Number,
-           data:<a href="_org.springsoft.aslib.HashTableObject.html">HashTableObject</a>):Void</pre>
-<blockquote><p>Put item in HashTable </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- Hash key </dd>
-<dd><code><strong>data</strong> (HashTableObject) </code>- Data object	</dd>
-</dl></blockquote></div><a name="get"></a>
-<div class="divider"><h4>get</h4>
-<pre>public <b>get</b>(key:Number):<a href="_org.springsoft.aslib.HashTableObject.html">HashTableObject</a></pre>
-<blockquote><p>Get an item from the HashTable </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The hash key </dd>
-<dt>Returns</dt>
-<dd>data object	</dd>
-</dl></blockquote></div><a name="remove"></a>
-<div class="divider"><h4>remove</h4>
-<pre>public <b>remove</b>(key:Number):Void</pre>
-<blockquote><p>Remove an item from the HashTable </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The hash key	</dd>
-</dl></blockquote></div><a name="removeAll"></a>
-<div class="divider"><h4>removeAll</h4>
-<pre>public <b>removeAll</b>(Void):Void</pre>
-<blockquote><p>Remove all items from the HashTable	</p>
-<dl></dl></blockquote></div><a name="size"></a>
-<div class="divider"><h4>size</h4>
-<pre>public <b>size</b>(Void):Number</pre>
-<blockquote><p>Get the size of the HashTable </p>
-<dl><dt>Returns</dt>
-<dd>size of HashTable	</dd>
-</dl></blockquote></div><a name="isEmpty"></a>
-<div class="divider"><h4>isEmpty</h4>
-<pre>public <b>isEmpty</b>(Void):Boolean</pre>
-<blockquote><p>Check if the HashTable is empty </p>
-<dl><dt>Returns</dt>
-<dd>true if HashTable is empty.  Otherwise returns false.	</dd>
-</dl></blockquote></div><a name="print"></a>
-<div><h4>print</h4>
-<pre>public <b>print</b>(Void):Void</pre>
-<blockquote><p>Print HashTable	</p>
-<dl></dl></blockquote></div></body>
-</html>

@@ -1,219 +1,0 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd"><html><head>
-<title>ActionDoc - org.springsoft.aslib.SingleLinkedList</title>
-</head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="actiondoc.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<h4 class="menu"><a href="index.html">INDEX</a></h4>
-<h5 class="novertspace">org.springsoft.aslib</h5>
-<h1>SingleLinkedList</h1>
-<h3 class="novertspace">Property Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr ><td width="2">private </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><strong><code><a href="#head_">head_</a></code></strong></td></tr>
-</table>
-<h3 class="novertspace">Constructor Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr><td><code><strong><a href="#SingleLinkedList">SingleLinkedList</a></strong>()</code></td></tr>
-</table>
-<h3 class="novertspace">Method Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#isEmpty">isEmpty</a></strong>(Void)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#insert">insert</a></strong>(data:<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a>)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#insertTail">insertTail</a></strong>(data:<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a>)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><code><strong><a href="#get">get</a></strong>(key:Number)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></td><td><code><strong><a href="#getData">getData</a></strong>(key:Number)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><code><strong><a href="#getAt">getAt</a></strong>(index:Number)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></td><td><code><strong><a href="#getDataAt">getDataAt</a></strong>(index:Number)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><code><strong><a href="#remove">remove</a></strong>(key:Number)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></td><td><code><strong><a href="#removeData">removeData</a></strong>(key:Number)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><code><strong><a href="#removeAt">removeAt</a></strong>(index:Number)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></td><td><code><strong><a href="#removeDataAt">removeDataAt</a></strong>(index:Number)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#removeAll">removeAll</a></strong>()</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><code><strong><a href="#getFront">getFront</a></strong>(canDelete:Boolean)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></td><td><code><strong><a href="#getFrontData">getFrontData</a></strong>(canDelete:Boolean)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#print">print</a></strong>(Void)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#size">size</a></strong>(Void)</code></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#isFront">isFront</a></strong>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>)</code></td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#isEnd">isEnd</a></strong>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>)</code></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#hasOneNode">hasOneNode</a></strong>(Void)</code></td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#insertFront">insertFront</a></strong>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>)</code></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><code><strong><a href="#removeFront">removeFront</a></strong>()</code></td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#insertMiddle">insertMiddle</a></strong>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>, targetNode:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>)</code></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><code><strong><a href="#removeMiddle">removeMiddle</a></strong>(previous:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>)</code></td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#insertEnd">insertEnd</a></strong>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>, targetNode:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>)</code></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.ListNode.html">ListNode</a></td><td><code><strong><a href="#removeEnd">removeEnd</a></strong>(previous:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>)</code></td></tr>
-</table>
-<h3>Property Details</h3>
-<a name="head_"></a>
-<div><h4>head_</h4>
-<p><code>private <strong>head_</strong>:ListNode</code></p>
-<blockquote></blockquote></div><h3>Constructor Details</h3>
-<a name="SingleLinkedList"></a>
-<div><h4>SingleLinkedList</h4>
-<pre><b>SingleLinkedList</b>()</pre>
-<blockquote><p>SingleLinkedList Constructor	</p>
-<dl></dl></blockquote></div><h3>Method Details</h3>
-<a name="isEmpty"></a>
-<div class="divider"><h4>isEmpty</h4>
-<pre>public <b>isEmpty</b>(Void):Boolean</pre>
-<blockquote><p>Test for empty list </p>
-<dl><dt>Returns</dt>
-<dd>true if the linked list is empty. Otherwise returns false. 	</dd>
-</dl></blockquote></div><a name="insert"></a>
-<div class="divider"><h4>insert</h4>
-<pre>public <b>insert</b>(data:<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a>):Void</pre>
-<blockquote><p>Insert a SingleLinkedListObject.  By default we insert at front of list </p>
-<dl><dt>Parameters</dt><dd><code><strong>data</strong> (SingleLinkedListObject) </code>- The SingleLinkedListObject's data object	</dd>
-</dl></blockquote></div><a name="insertTail"></a>
-<div class="divider"><h4>insertTail</h4>
-<pre>public <b>insertTail</b>(data:<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a>):Void</pre>
-<blockquote><p>Insert a SingleLinkedListObject at tail </p>
-<dl><dt>Parameters</dt><dd><code><strong>data</strong> (SingleLinkedListObject) </code>- The SingleLinkedListObject's data object	</dd>
-</dl></blockquote></div><a name="get"></a>
-<div class="divider"><h4>get</h4>
-<pre>public <b>get</b>(key:Number):<a href="_org.springsoft.aslib.ListNode.html">ListNode</a></pre>
-<blockquote><p>Get a node reference </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The numeric key for finding node </dd>
-<dt>Returns</dt>
-<dd>ListNode if we find the key.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="getData"></a>
-<div class="divider"><h4>getData</h4>
-<pre>public <b>getData</b>(key:Number):<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></pre>
-<blockquote><p>Get a SingleLinkedListObject data object reference </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The numeric key to find SingleLinkedListObject </dd>
-<dt>Returns</dt>
-<dd>SingleLinkedListObject if we find the key.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="getAt"></a>
-<div class="divider"><h4>getAt</h4>
-<pre>public <b>getAt</b>(index:Number):<a href="_org.springsoft.aslib.ListNode.html">ListNode</a></pre>
-<blockquote><p>Get a node at index </p>
-<dl><dt>Parameters</dt><dd><code><strong>index</strong> (Number) </code>- The numeric index to locate node </dd>
-<dt>Returns</dt>
-<dd>ListNode if we locate the index.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="getDataAt"></a>
-<div class="divider"><h4>getDataAt</h4>
-<pre>public <b>getDataAt</b>(index:Number):<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></pre>
-<blockquote><p>Get a SingleLinkedListObject data object reference </p>
-<dl><dt>Parameters</dt><dd><code><strong>index</strong> (Number) </code>- The numeric index to locate SingleLinkedListObject </dd>
-<dt>Returns</dt>
-<dd>SingleLinkedListObject if we locate the index.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="remove"></a>
-<div class="divider"><h4>remove</h4>
-<pre>public <b>remove</b>(key:Number):<a href="_org.springsoft.aslib.ListNode.html">ListNode</a></pre>
-<blockquote><p>Remove a node </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The numeric key to find and remove node </dd>
-<dt>Returns</dt>
-<dd>ListNode if list is not empty.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="removeData"></a>
-<div class="divider"><h4>removeData</h4>
-<pre>public <b>removeData</b>(key:Number):<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></pre>
-<blockquote><p>Remove a SingleLinkedListObject </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The numeric key to find and remove SingleLinkedListObject </dd>
-<dt>Returns</dt>
-<dd>SingleLinkedListObject if list is not empty.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="removeAt"></a>
-<div class="divider"><h4>removeAt</h4>
-<pre>public <b>removeAt</b>(index:Number):<a href="_org.springsoft.aslib.ListNode.html">ListNode</a></pre>
-<blockquote><p>Remove a node at index </p>
-<dl><dt>Parameters</dt><dd><code><strong>index</strong> (Number) </code>- The numeric index to locate and remove node </dd>
-<dt>Returns</dt>
-<dd>ListNode if list is not empty.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="removeDataAt"></a>
-<div class="divider"><h4>removeDataAt</h4>
-<pre>public <b>removeDataAt</b>(index:Number):<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></pre>
-<blockquote><p>Remove a SingleLinkedListObject at index </p>
-<dl><dt>Parameters</dt><dd><code><strong>index</strong> (Number) </code>- The numeric index to locate and remove SingleLinkedListObject </dd>
-<dt>Returns</dt>
-<dd>SingleLinkedListObject if list is not empty.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="removeAll"></a>
-<div class="divider"><h4>removeAll</h4>
-<pre>public <b>removeAll</b>():Void</pre>
-<blockquote><p>Remove all nodes	</p>
-<dl></dl></blockquote></div><a name="getFront"></a>
-<div class="divider"><h4>getFront</h4>
-<pre>public <b>getFront</b>(canDelete:Boolean):<a href="_org.springsoft.aslib.ListNode.html">ListNode</a></pre>
-<blockquote><p>Return the front node and delete front node if canDelete is set to true </p>
-<dl><dt>Parameters</dt><dd><code><strong>canDelete</strong> (Boolean) </code>- Flag that indicates if we can delete the front node </dd>
-<dt>Returns</dt>
-<dd>ListNode if list is not empty.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="getFrontData"></a>
-<div class="divider"><h4>getFrontData</h4>
-<pre>public <b>getFrontData</b>(canDelete:Boolean):<a href="_org.springsoft.aslib.SingleLinkedListObject.html">SingleLinkedListObject</a></pre>
-<blockquote><p>Return the front SingleLinkedListObject and delete front SingleLinkedListObject if canDelete is set to true </p>
-<dl><dt>Parameters</dt><dd><code><strong>canDelete</strong> (Boolean) </code>- Flag that indicates if we can delete the front SingleLinkedListObject </dd>
-<dt>Returns</dt>
-<dd>SingleLinkedListObject if list is not empty.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="print"></a>
-<div class="divider"><h4>print</h4>
-<pre>public <b>print</b>(Void):Void</pre>
-<blockquote><p>Print linked list	</p>
-<dl></dl></blockquote></div><a name="size"></a>
-<div class="divider"><h4>size</h4>
-<pre>public <b>size</b>(Void):Number</pre>
-<blockquote><p>Gets the size of the list </p>
-<dl><dt>Returns</dt>
-<dd>the number of nodes in the list	</dd>
-</dl></blockquote></div><a name="isFront"></a>
-<div class="divider"><h4>isFront</h4>
-<pre>private <b>isFront</b>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>):Boolean</pre>
-<blockquote><p>Test for front node </p>
-<dl><dt>Parameters</dt><dd><code><strong>node</strong> (ListNode) </code>- Test for front node </dd>
-<dt>Returns</dt>
-<dd>true if node is front node.  Otherwise returns false. 	</dd>
-</dl></blockquote></div><a name="isEnd"></a>
-<div class="divider"><h4>isEnd</h4>
-<pre>private <b>isEnd</b>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>):Boolean</pre>
-<blockquote><p>Test for end node </p>
-<dl><dt>Parameters</dt><dd><code><strong>node</strong> (ListNode) </code>- Test for end node </dd>
-<dt>Returns</dt>
-<dd>true if node is end node.  Otherwise returns false.	</dd>
-</dl></blockquote></div><a name="hasOneNode"></a>
-<div class="divider"><h4>hasOneNode</h4>
-<pre>private <b>hasOneNode</b>(Void):Boolean</pre>
-<blockquote><p>Test if list has only one node </p>
-<dl><dt>Returns</dt>
-<dd>true if list has only one node.  Otherwise returns false.	</dd>
-</dl></blockquote></div><a name="insertFront"></a>
-<div class="divider"><h4>insertFront</h4>
-<pre>private <b>insertFront</b>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>):Void</pre>
-<blockquote><p>Insert at front </p>
-<dl><dt>Parameters</dt><dd><code><strong>node</strong> (ListNode) </code>- Insert node at front of list	</dd>
-</dl></blockquote></div><a name="removeFront"></a>
-<div class="divider"><h4>removeFront</h4>
-<pre>private <b>removeFront</b>():<a href="_org.springsoft.aslib.ListNode.html">ListNode</a></pre>
-<blockquote><p>Remove node from front of list </p>
-<dl><dt>Returns</dt>
-<dd>ListNode if list is not empty.  Otherwise returns false.	</dd>
-</dl></blockquote></div><a name="insertMiddle"></a>
-<div class="divider"><h4>insertMiddle</h4>
-<pre>private <b>insertMiddle</b>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>,
-                     targetNode:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>):Void</pre>
-<blockquote><p>Insert at middle </p>
-<dl><dt>Parameters</dt><dd><code><strong>node</strong> (ListNode) </code>- Node that needs to be inserted </dd>
-<dd><code><strong>targetNode</strong> (ListNode) </code>- Insert node after targetNode	</dd>
-</dl></blockquote></div><a name="removeMiddle"></a>
-<div class="divider"><h4>removeMiddle</h4>
-<pre>private <b>removeMiddle</b>(previous:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>):<a href="_org.springsoft.aslib.ListNode.html">ListNode</a></pre>
-<blockquote><p>Remove from middle  </p>
-<dl><dt>Parameters</dt><dd><code><strong>previous</strong> (ListNode) </code>- Node before node that needs to be removed </dd>
-<dt>Returns</dt>
-<dd>ListNode	</dd>
-</dl></blockquote></div><a name="insertEnd"></a>
-<div class="divider"><h4>insertEnd</h4>
-<pre>private <b>insertEnd</b>(node:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>,
-                  targetNode:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>):Void</pre>
-<blockquote><p>Insert at end </p>
-<dl><dt>Parameters</dt><dd><code><strong>node</strong> (ListNode) </code>- Node that needs to be inserted </dd>
-<dd><code><strong>targetNode</strong> (ListNode) </code>- Insert node after targetNode	</dd>
-</dl></blockquote></div><a name="removeEnd"></a>
-<div><h4>removeEnd</h4>
-<pre>private <b>removeEnd</b>(previous:<a href="_org.springsoft.aslib.ListNode.html">ListNode</a>):<a href="_org.springsoft.aslib.ListNode.html">ListNode</a></pre>
-<blockquote><p>Remove from end </p>
-<dl><dt>Parameters</dt><dd><code><strong>previous</strong> (ListNode) </code>- Node before node that needs to be removed </dd>
-<dt>Returns</dt>
-<dd>ListNode	</dd>
-</dl></blockquote></div></body>
-</html>

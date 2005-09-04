@@ -1,127 +1,0 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd"><html><head>
-<title>ActionDoc - org.springsoft.aslib.BinaryTree</title>
-</head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="actiondoc.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<h4 class="menu"><a href="index.html">INDEX</a></h4>
-<h5 class="novertspace">org.springsoft.aslib</h5>
-<h1>BinaryTree</h1>
-<h3 class="novertspace">Property Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr ><td width="2">private </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a></td><td><strong><code><a href="#treeRoot_">treeRoot_</a></code></strong></td></tr>
-</table>
-<h3 class="novertspace">Constructor Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr><td><code><strong><a href="#BinaryTree">BinaryTree</a></strong>()</code></td></tr>
-</table>
-<h3 class="novertspace">Method Summary</h3>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#insertIter">insertIter</a></strong>(data:<a href="_org.springsoft.aslib.BinaryTreeObject.html">BinaryTreeObject</a>)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#insert">insert</a></strong>(data:<a href="_org.springsoft.aslib.BinaryTreeObject.html">BinaryTreeObject</a>)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.BinaryTreeObject.html">BinaryTreeObject</a></td><td><code><strong><a href="#search">search</a></strong>(key:Number)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#printPreOrder">printPreOrder</a></strong>(Void)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#printPostOrder">printPostOrder</a></strong>(Void)</code></td></tr>
-<tr class="alt"><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#printInOrder">printInOrder</a></strong>(Void)</code></td></tr>
-<tr ><td width="2">public </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#remove">remove</a></strong>(key:Number)</code></td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#isEmpty">isEmpty</a></strong>(Void)</code></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#printPreOrderHelper">printPreOrderHelper</a></strong>(tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>)</code></td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#printInOrderHelper">printInOrderHelper</a></strong>(tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>)</code></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#insertHelper">insertHelper</a></strong>(node:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>, tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>)</code></td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.BinaryTreeObject.html">BinaryTreeObject</a></td><td><code><strong><a href="#searchHelper">searchHelper</a></strong>(tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>, key:Number)</code></td></tr>
-<tr ><td width="2">private </td><td width="2"></td><td width="2"></td><td><code><strong><a href="#printPostOrderHelper">printPostOrderHelper</a></strong>(tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>)</code></td></tr>
-<tr class="alt"><td width="2">private </td><td width="2"></td><td width="2"><a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a></td><td><code><strong><a href="#removeHelper">removeHelper</a></strong>(key:Number, tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>)</code></td></tr>
-</table>
-<h3>Property Details</h3>
-<a name="treeRoot_"></a>
-<div><h4>treeRoot_</h4>
-<p><code>private <strong>treeRoot_</strong>:TreeNode</code></p>
-<blockquote></blockquote></div><h3>Constructor Details</h3>
-<a name="BinaryTree"></a>
-<div><h4>BinaryTree</h4>
-<pre><b>BinaryTree</b>()</pre>
-<blockquote><p>BinaryTree Constructor 	</p>
-<dl></dl></blockquote></div><h3>Method Details</h3>
-<a name="insertIter"></a>
-<div class="divider"><h4>insertIter</h4>
-<pre>public <b>insertIter</b>(data:<a href="_org.springsoft.aslib.BinaryTreeObject.html">BinaryTreeObject</a>):Void</pre>
-<blockquote><p>Iterative insert </p>
-<dl><dt>Parameters</dt><dd><code><strong>data</strong> (BinaryTreeObject) </code>- The data to insert into the tree	</dd>
-</dl></blockquote></div><a name="insert"></a>
-<div class="divider"><h4>insert</h4>
-<pre>public <b>insert</b>(data:<a href="_org.springsoft.aslib.BinaryTreeObject.html">BinaryTreeObject</a>):Void</pre>
-<blockquote><p>Recursive insert </p>
-<dl><dt>Parameters</dt><dd><code><strong>data</strong> (BinaryTreeObject) </code>- The data to insert into the tree	</dd>
-</dl></blockquote></div><a name="search"></a>
-<div class="divider"><h4>search</h4>
-<pre>public <b>search</b>(key:Number):<a href="_org.springsoft.aslib.BinaryTreeObject.html">BinaryTreeObject</a></pre>
-<blockquote><p>Search the binary tree for a key </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The key to search for in the tree </dd>
-<dt>Returns</dt>
-<dd>BinaryTreeObject if key was found.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="printPreOrder"></a>
-<div class="divider"><h4>printPreOrder</h4>
-<pre>public <b>printPreOrder</b>(Void):Void</pre>
-<blockquote><p>Print tree PreOrder </p>
-<dl><dt>Parameters</dt></dl></blockquote></div><a name="printPostOrder"></a>
-<div class="divider"><h4>printPostOrder</h4>
-<pre>public <b>printPostOrder</b>(Void):Void</pre>
-<blockquote><p>Print tree PostOrder </p>
-<dl><dt>Parameters</dt></dl></blockquote></div><a name="printInOrder"></a>
-<div class="divider"><h4>printInOrder</h4>
-<pre>public <b>printInOrder</b>(Void):Void</pre>
-<blockquote><p>Print tree InOrder </p>
-<dl><dt>Parameters</dt></dl></blockquote></div><a name="remove"></a>
-<div class="divider"><h4>remove</h4>
-<pre>public <b>remove</b>(key:Number):Void</pre>
-<blockquote><p>Remove node  </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The key to search for and to remove it from the tree	</dd>
-</dl></blockquote></div><a name="isEmpty"></a>
-<div class="divider"><h4>isEmpty</h4>
-<pre>private <b>isEmpty</b>(Void):Boolean</pre>
-<blockquote><p>Test if tree is empty </p>
-<dl><dt>Returns</dt>
-<dd>true if tree is empty.  Otherwise returns false.	</dd>
-</dl></blockquote></div><a name="printPreOrderHelper"></a>
-<div class="divider"><h4>printPreOrderHelper</h4>
-<pre>private <b>printPreOrderHelper</b>(tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>):Void</pre>
-<blockquote><p>Helper Print tree PreOrder </p>
-<dl><dt>Parameters</dt><dd><code><strong>tree</strong> (TreeNode) </code>- Any tree node starting at the root	</dd>
-</dl></blockquote></div><a name="printInOrderHelper"></a>
-<div class="divider"><h4>printInOrderHelper</h4>
-<pre>private <b>printInOrderHelper</b>(tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>):Void</pre>
-<blockquote><p>Helper Print tree InOrder </p>
-<dl><dt>Parameters</dt><dd><code><strong>tree</strong> (TreeNode) </code>- Any tree node starting at the root	</dd>
-</dl></blockquote></div><a name="insertHelper"></a>
-<div class="divider"><h4>insertHelper</h4>
-<pre>private <b>insertHelper</b>(node:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>,
-                     tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>):Void</pre>
-<blockquote><p>Helper recursive insert </p>
-<dl><dt>Parameters</dt><dd><code><strong>node</strong> (TreeNode) </code>- The data to insert into the tree </dd>
-<dd><code><strong>tree</strong> (TreeNode) </code>- Any tree node starting at the root	</dd>
-</dl></blockquote></div><a name="searchHelper"></a>
-<div class="divider"><h4>searchHelper</h4>
-<pre>private <b>searchHelper</b>(tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>,
-                     key:Number):<a href="_org.springsoft.aslib.BinaryTreeObject.html">BinaryTreeObject</a></pre>
-<blockquote><p>Helper search binary tree </p>
-<dl><dt>Parameters</dt><dd><code><strong>tree</strong> (TreeNode) </code>- Any tree node starting at the root </dd>
-<dd><code><strong>key</strong> (Number) </code>- The key to search for in the tree </dd>
-<dt>Returns</dt>
-<dd>BinaryTreeObject if key was found.  Otherwise returns null.	</dd>
-</dl></blockquote></div><a name="printPostOrderHelper"></a>
-<div class="divider"><h4>printPostOrderHelper</h4>
-<pre>private <b>printPostOrderHelper</b>(tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>):Void</pre>
-<blockquote><p>Helper Print tree PostOrder </p>
-<dl><dt>Parameters</dt><dd><code><strong>tree</strong> (TreeNode) </code>- Any tree node starting at the root	</dd>
-</dl></blockquote></div><a name="removeHelper"></a>
-<div><h4>removeHelper</h4>
-<pre>private <b>removeHelper</b>(key:Number,
-                     tree:<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a>):<a href="_org.springsoft.aslib.TreeNode.html">TreeNode</a></pre>
-<blockquote><p>Helper remove node </p>
-<dl><dt>Parameters</dt><dd><code><strong>key</strong> (Number) </code>- The key to search for and to remove in the tree </dd>
-<dd><code><strong>tree</strong> (TreeNode) </code>- Any tree node starting at the root	</dd>
-</dl></blockquote></div></body>
-</html>
